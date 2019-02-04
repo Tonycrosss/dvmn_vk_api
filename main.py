@@ -61,5 +61,7 @@ def main():
         all_posts_counts.append(current_count)
     create_graph(all_posts_counts, dates_list)
 
+
 if __name__ == '__main__':
     main()
+
