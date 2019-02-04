@@ -42,11 +42,11 @@ def get_timestamp_tuple(date):
 
 
 def create_graph(dates, counts):
-    trace0 = go.Scatter(
-        y=[date for date in dates],
-        x=[count for count in counts]
+    coca_cola_posts = go.Bar(
+        x=[date for date in dates],
+        y=[count for count in counts]
     )
-    data = [trace0, ]
+    data = [coca_cola_posts, ]
 
     py.plot(data, filename='basic-line', auto_open=False)
 
