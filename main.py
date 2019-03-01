@@ -16,7 +16,7 @@ def get_posts(timestamp):
     params = {
         "access_token": TOKEN,
         "v": "5.92",
-        "count": "200",
+        # "count": "200",
         "q": "coca-cola",
         "start_time": f"{timestamp}",
 
@@ -54,7 +54,7 @@ def main():
     all_posts_counts = []
     for timestamp in dates_timestamps:
         posts_data = get_posts(timestamp)
-        current_count = len(posts_data['response']['items'])
+        current_count = posts_data['response']['total_count']
         all_posts_counts.append(current_count)
     create_graph(all_posts_counts, dates_list)
 
