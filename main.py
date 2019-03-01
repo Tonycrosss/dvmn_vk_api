@@ -33,7 +33,6 @@ def get_timestamp_tuple(day_date):
         day_date = day_date - datetime.timedelta(days=1)
         dates_list.append(day_date)
         timestamp_list.append(day_date.timestamp())
-        day_date = day_date - datetime.timedelta(days=day)
     return timestamp_list, dates_list
 
 
