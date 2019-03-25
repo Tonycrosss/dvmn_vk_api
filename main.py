@@ -5,7 +5,7 @@ import plotly.plotly as py
 import plotly.graph_objs as go
 
 
-TOKEN = "525005235250052352500523d9520f2aaa55250525005230ba586e141c5ed5a99a33da2"
+TOKEN = ""
 
 
 # По поводу count - там теперь сделали по-умолчанию ограничение в 30 постов,
